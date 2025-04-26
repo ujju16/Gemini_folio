@@ -2,7 +2,7 @@
 console.log("Portfolio script chargé !");
 
 const animatedBackground = document.getElementById('animated-background');
-const numberOfLines = 50; // Nombre de lignes à générer
+const numberOfLines = 550; // Nombre de lignes à générer
 
 function createCircuitLine() {
     const line = document.createElement('div');
@@ -20,7 +20,7 @@ function createCircuitLine() {
     line.style.height = `${height}px`;
     line.style.left = `${x}%`;
     line.style.top = `${y}%`;
-    line.style.transform = `translate(-<span class="math-inline">\{width / 2\}px, \-</span>{height / 2}px)`; // Centrer l'origine
+    line.style.transform = `translate(<span class="math-inline"></span>)`; // Centrer l'origine
 
     // Animation plus complexe pour un effet de mouvement continu
     line.style.animation = `move ${speed}s linear infinite alternate`;
@@ -43,10 +43,11 @@ function createCircuitLine() {
 const styleSheet = document.createElement("style");
 styleSheet.type = "text/css";
 styleSheet.innerText = `@keyframes abstractCircuitMove {
-    0% { transform: translate(${Math.random() * 50 - 25}px, <span class="math-inline">\{Math\.random\(\) \* 50 \- 25\}px\) rotate\(</span>{Math.random() * 360}deg); opacity: 0.4; }
-    50% { opacity: 0.8; }
-    100% { transform: translate(${Math.random() * 50 - 25}px, <span class="math-inline">\{Math\.random\(\) \* 50 \- 25\}px\) rotate\(</span>{Math.random() * 360}deg); opacity: 0.4; }
-}`;
+    0% { transform: translateX(0) }
+    50% { transform: translateY(100) }    
+    100% { transform: rotate() }
+};`
+
 document.head.appendChild(styleSheet);
 
 
