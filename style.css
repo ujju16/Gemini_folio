@@ -202,3 +202,41 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* style.css */
+/* ... vos styles précédents ... */
+
+.navbar-nav .nav-link {
+    position: relative;
+    padding: 0.7rem 1rem;
+    color: #eee; /* Couleur de base des liens */
+    transition: color 0.3s ease-in-out; /* Transition douce pour la couleur */
+}
+
+.navbar-nav .nav-link:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #00ffcc; /* Couleur de la ligne d'effet */
+    transition: width 0.3s ease-in-out; /* Transition douce pour la largeur */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #00ffcc; /* Couleur au survol */
+}
+
+.navbar-nav .nav-link:hover:before {
+    width: 100%;
+}
+
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item.active .nav-link:hover {
+    color: #00ffcc; /* Style pour le lien actif */
+}
+
+.navbar-nav .nav-item.active .nav-link:before {
+    width: 100%;
+}
