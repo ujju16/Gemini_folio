@@ -49,7 +49,11 @@ Cette section présente les différents projets électroniques que j'ai réalis�
 
 ### ... (Ajoutez autant de projets que nécessaire)
 
-## Compétences
+## Mes Compétences :hammer:
+
+* Conception de circuits :straight_ruler:
+* Programmation embarquée :computer:
+* Prototypage :test_tube:
 
 Cette section met en évidence mes compétences techniques dans le domaine de l'électronique et du développement web :
 
@@ -61,6 +65,9 @@ Cette section met en évidence mes compétences techniques dans le domaine de l'
 * Capteurs et actionneurs
 * Communication sans fil (ex: Bluetooth, WiFi, LoRa)
 * Prototypage et assemblage de circuits imprimés (PCB)
+
+[![Conception de Circuits](https://img.shields.io/badge/Conception-Circuits-%23007bff?style=flat&logo=electronicarts&logoColor=white)](https://fr.wikipedia.org/wiki/Conception_de_circuits)
+[![Programmation Embarquée](https://img.shields.io/badge/Programmation-Embarqu%C3%A9e-%23f8f9fa?style=flat&logo=arduino&logoColor=%2300979D)](https://www.arduino.cc/)
 
 ### Développement Web :
 
@@ -84,7 +91,7 @@ Vos commentaires et suggestions sont les bienvenus ! Si vous avez des idées d'a
 
 ## Auteur
 
-* [Votre Nom](Votre Lien GitHub)
+* [Ujju16](https://ujju16/github.com)
 
 ## Licence
 
