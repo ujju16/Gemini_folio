@@ -42,10 +42,10 @@ function createCircuitLine() {
 // Définir l'animation keyframes en JavaScript pour plus de contrôle
 const styleSheet = document.createElement("style");
 styleSheet.type = "text/css";
-styleSheet.innerText = `@keyframes abstractCircuitMove {
+styleSheet.textContent = `@keyframes abstractCircuitMove {
     0% { transform: translateX(0) }
     50% { transform: translateY(100) }    
-    100% { transform: rotate() }
+    100% { transform: rotate(45deg) }
 };`
 
 document.head.appendChild(styleSheet);
