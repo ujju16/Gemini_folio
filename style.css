@@ -1,10 +1,11 @@
 /* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:wght@400;700&display=swap');
+
 body {
-    font-family: sans-serif;
+    font-family:'Cascadia Code', monospace;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    color: #fff;
     line-height: 1.6;
 }
 
@@ -46,7 +47,6 @@ header nav ul li a {
 }
 
 .section h2 {
-    color: #fff;
     border-bottom: 2px solid #333;
     padding-bottom: 0.5em;
     margin-bottom: 1em;
@@ -66,8 +66,7 @@ header nav ul li a {
 }
 
 .competence h3 {
-    margin-top: 0;
-    color: #fff;
+    margin-top: 0
 }
 
 .competence ul {
@@ -93,8 +92,7 @@ header nav ul li a {
 }
 
 .projet-card h3 {
-    margin-top: 0;
-    color: #fff;
+    margin-top: 0
 }
 
 .projet-card p {
@@ -119,6 +117,7 @@ header nav ul li a {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     margin-bottom: 1em;
+    color: #fff;
 }
 
 .electronique-details h3 {
@@ -142,6 +141,7 @@ header nav ul li a {
 
 .form-group {
     margin-bottom: 1em;
+    color: #fff;
 }
 
 .form-group label {
@@ -238,29 +238,37 @@ footer {
     width: 100%;
 }
 
-#animated-background {
+body {
+    margin: 0;
+    overflow: auto; /* Empêche la barre de défilement due au canvas */
+    font-family: sans-serif; /* Police de base pour le contenu */ /* Couleur de texte de base */
+}
+
+.background {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Pour que le fond soit derrière le contenu */
-    background-color: #111; /* Couleur de fond de base */
-    overflow: hidden; /* Empêche le dépassement des éléments d'animation */
+    z-index: -1; /* Place le fond en arrière-plan */
 }
 
-.circuit-line {
-    position: absolute;
-    background-color: #00ffcc;
-    opacity: 0.6;
-    border-radius: 2px;
+#circuitCanvas {
+    display: block; /* Supprime l'espace sous le canvas */
 }
 
-@keyframes moveLines {
-    0% {
-        transform: translate(0, 3);
-    }
-    100% {
-        transform: translate(-550px, -250px); /* Ajustez pour la direction et la vitesse */
-    }
+.content {
+    position: relative;
+    z-index: 1; /* Place le contenu au-dessus du fond */
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
 }
